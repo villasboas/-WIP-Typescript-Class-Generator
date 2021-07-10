@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --no-cache --watch"
+  },
   "devDependencies": {
+    "@types/jest": "^26.0.24",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5"
