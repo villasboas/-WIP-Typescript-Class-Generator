@@ -1,4 +1,6 @@
-export class InstanceCreator {
+import { InstanceCreatorContract } from "./instance-creator-contract";
+
+export class InstanceCreator implements InstanceCreatorContract{
     constructor(public classReference, public classCreator) {}
 
     /**
