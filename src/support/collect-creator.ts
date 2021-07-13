@@ -12,11 +12,10 @@ export class CollectionCreator {
     async create(collectionLength: number): Promise<any[]> {
         const result = [];
 
-        // cria n instancias
         for (let i = 0; i < collectionLength; i++) {
             result.push(await this.instanceCreator.create())
         }
-        // volta um array com as instancias criadas
+
         return result;
     }  
 }
